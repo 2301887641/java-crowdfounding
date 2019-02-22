@@ -1,0 +1,46 @@
+.gradle
+/build/
+!gradle/wrapper/gradle-wrapper.jar
+/**/generated/
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+/out/
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+log/
+*.log
+*.log.*
+!/src/main/webapp/WEB-INF/admin/modules/log/
+将删除 crowdfounding-bean/
+将删除 crowdfounding-common/
+将删除 crowdfounding-main/
+将删除 crowdfounding-manager-api/
+将删除 crowdfounding-manager-impl/
+将删除 crowdfounding-portal-api/
+将删除 crowdfounding-portal-impl/
+将删除 pom.xml
+将删除 src/
+将删除 crowdfounding-bean/src/test/
+将删除 crowdfounding-common/src/test/
+将删除 crowdfounding-manager-api/src/test/
+将删除 crowdfounding-manager-impl/src/
+将删除 crowdfounding-portal-api/src/
+将删除 crowdfounding-portal-impl/src/
