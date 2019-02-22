@@ -14,7 +14,6 @@
       将IOC容器对象存放到application域.
       ApplicationContext ioc = WebApplicationContextUtils.getWebApplicationContext(application);
 
-
       ServletContextListener监听器接口:
           监听ServletContext创建和销毁.
               如果监听到ServletContext创建(服务器启动),就会创建IOC容器(XmlWebApplicationContext).
@@ -23,10 +22,7 @@
   <listener>
     <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
   </listener>
-
-  <!-- 字符编码过滤器 :
-      只负责解决POST请求乱码问题.
-  -->
+  <!-- 字符编码过滤器 :只负责解决POST请求乱码问题.-->
   <filter>
     <filter-name>encoding</filter-name>
     <filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
@@ -47,10 +43,7 @@
     <dispatcher>REQUEST</dispatcher>
      -->
   </filter-mapping>
-
-  <!-- 支持RESTful风格.将POST请求转换为PUT或DELETE请求.
-
-  会读取隐含参数: "_method" -->
+  <!-- 支持RESTful风格.将POST请求转换为PUT或DELETE请求.会读取隐含参数: "_method" -->
   <filter>
     <filter-name>HiddenHttpMethodFilter</filter-name>
     <filter-class>org.springframework.web.filter.HiddenHttpMethodFilter</filter-class>
@@ -59,7 +52,6 @@
     <filter-name>HiddenHttpMethodFilter</filter-name>
     <servlet-name>springmvc</servlet-name>
   </filter-mapping>
-
   <servlet>
     <servlet-name>springmvc</servlet-name>
     <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
@@ -67,37 +59,26 @@
       <param-name>contextConfigLocation</param-name>
       <param-value>classpath:spring/springmvc-context.xml</param-value>
     </init-param>
-
     <load-on-startup>1</load-on-startup>
   </servlet>
   <servlet-mapping>
     <servlet-name>springmvc</servlet-name>
-
     <!-- URL : http://localhost:8080/contextPath/order/save.action -->
-
-    <!-- 精确匹配
-    <url-pattern>/user/save</url-pattern>
-     -->
+    <!-- 精确匹配<url-pattern>/user/save</url-pattern>-->
     <!-- 路径匹配 -->
     <!--
     <url-pattern>/user/*</url-pattern>
     <url-pattern>/*</url-pattern>
      -->
-
     <!-- 扩展匹配 -->
     <url-pattern>*.htm</url-pattern>
     <url-pattern>*.do</url-pattern>
-
-    <!-- 默认匹配
-    <url-pattern>/</url-pattern>
-    -->
+    <!-- 默认匹配<url-pattern>/</url-pattern>-->
   </servlet-mapping>
-
   <!-- 会话超时时间 -->
   <session-config>
     <session-timeout>60</session-timeout>
   </session-config>
-
   <welcome-file-list>
     <welcome-file>index.jsp</welcome-file>
   </welcome-file-list>

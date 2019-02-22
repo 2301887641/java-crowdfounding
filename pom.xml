@@ -4,18 +4,18 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.crowdfounding</groupId>
-    <artifactId>crowdfounding</artifactId>
+    <groupId>com.crowdfunding</groupId>
+    <artifactId>crowdfunding</artifactId>
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
     <modules>
-        <module>crowdfounding-main</module>
-        <module>crowdfounding-manager-impl</module>
-        <module>crowdfounding-manager-api</module>
-        <module>crowdfounding-portal-impl</module>
-        <module>crowdfounding-portal-api</module>
-        <module>crowdfounding-common</module>
-        <module>crowdfounding-bean</module>
+        <module>crowdfunding-main</module>
+        <module>crowdfunding-manager-impl</module>
+        <module>crowdfunding-manager-api</module>
+        <module>crowdfunding-portal-impl</module>
+        <module>crowdfunding-portal-api</module>
+        <module>crowdfunding-common</module>
+        <module>crowdfunding-bean</module>
     </modules>
 
 
