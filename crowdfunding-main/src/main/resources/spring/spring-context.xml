@@ -31,7 +31,7 @@
 	    <property name="dataSource" ref="dataSource"></property>
 	    <property name="mapperLocations">
 	        <list>
-	            <value>classpath*:mybatis/mapper-*.xml</value>
+	            <value>classpath*:mapper/mapper-*.xml</value>
 	        </list>
 	    </property>
 	</bean>
@@ -39,7 +39,7 @@
 	<!-- 扫描Mapper映射配置 -->
 	<bean id="mapperScannerConfigurer" class="org.mybatis.spring.mapper.MapperScannerConfigurer">
 		<!-- <property name="basePackage" value="com.atguigu.atcrowdfunding.manager.dao,com.atguigu.atcrowdfunding.potal.dao"/> -->
-		<property name="basePackage" value="com.atguigu.atcrowdfunding.*.dao"/>
+		<property name="basePackage" value="com.crowdfunding.*.dao"/>
 	</bean>
 
 	<!-- 事务管理器 -->
@@ -56,7 +56,7 @@
 	</tx:advice>
 	
 	<aop:config>
-		<aop:advisor advice-ref="transactionAdvice" pointcut="execution(* com.atguigu.atcrowdfunding..*Service.*(..))"/>
+		<aop:advisor advice-ref="transactionAdvice" pointcut="execution(* com.crowdfunding..*Service.*(..))"/>
 	</aop:config>		
 
 </beans>

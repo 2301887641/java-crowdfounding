@@ -8,7 +8,7 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-
+    <!--后台管理系统,存放业务层接口和dao层接口(jar)-->
     <artifactId>crowdfunding-manager-api</artifactId>
 
     <name>crowdfunding-manager-api</name>

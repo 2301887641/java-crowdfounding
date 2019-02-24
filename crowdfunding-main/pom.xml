@@ -6,9 +6,10 @@
         <artifactId>crowdfunding</artifactId>
         <groupId>com.crowdfunding</groupId>
         <version>1.0-SNAPSHOT</version>
+        <relativePath>../pom.xml</relativePath>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-
+    <!--web工程,存放所有页面,框架配置文件(war)-->
     <artifactId>crowdfunding-main</artifactId>
     <packaging>war</packaging>
 
@@ -41,10 +42,30 @@
             <groupId>org.springframework</groupId>
             <artifactId>spring-webmvc</artifactId>
         </dependency>
+        <dependency>
+            <groupId>com.mchange</groupId>
+            <artifactId>c3p0</artifactId>
+        </dependency>
+        <!-- Spring整合MyBatis -->
+        <!-- MyBatis中延迟加载需要使用Cglib -->
+        <!-- https://mvnrepository.com/artifact/org.mybatis/mybatis -->
+        <dependency>
+            <groupId>org.mybatis</groupId>
+            <artifactId>mybatis</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.mybatis</groupId>
+            <artifactId>mybatis-spring</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-jdbc</artifactId>
+        </dependency>
     </dependencies>
 
     <build>
-        <finalName>crowdfounding-main</finalName>
+        <finalName>crowdfunding-main</finalName>
         <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
             <plugins>
                 <plugin>

@@ -10,7 +10,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>crowdfunding-portal-impl</artifactId>
-
+    <!--前台系统,存放控制器类,业务层实现类(jar)-->
     <name>crowdfunding-portal-impl</name>
     <!-- FIXME change it to the project's website -->
     <url>http://www.example.com</url>

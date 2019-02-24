@@ -8,7 +8,7 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-
+    <!--存放所有模块所需要的公共类(jar)-->
     <artifactId>crowdfunding-common</artifactId>
 
     <name>crowdfunding-common</name>

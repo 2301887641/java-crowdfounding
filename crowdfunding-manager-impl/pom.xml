@@ -14,7 +14,7 @@
     <name>crowdfunding-manager-impl</name>
     <!-- FIXME change it to the project's website -->
     <url>http://www.example.com</url>
-
+    <!--后台管理系统,存放控制器,业务层实现类(jar)-->
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>1.8</maven.compiler.source>
