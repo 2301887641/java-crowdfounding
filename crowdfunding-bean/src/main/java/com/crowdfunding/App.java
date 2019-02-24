@@ -1,4 +1,4 @@
-package com.crowdfounding;
+package com.crowdfunding;
 
 /**
  * Hello world!
