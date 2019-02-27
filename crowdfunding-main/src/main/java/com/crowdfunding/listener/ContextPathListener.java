@@ -15,7 +15,7 @@ public class ContextPathListener implements ServletContextListener {
     @Override
     public void contextInitialized(ServletContextEvent servletContextEvent) {
         ServletContext servletContext = servletContextEvent.getServletContext();
-        servletContext.setAttribute(APP_PATH, servletContext.getContextPath());
+        servletContext.setAttribute("APP_PATH", servletContext.getContextPath());
     }
 
     @Override
