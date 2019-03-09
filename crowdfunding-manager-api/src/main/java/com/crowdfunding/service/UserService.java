@@ -1,6 +1,7 @@
 package com.crowdfunding.service;
 
 import com.crowdfunding.bean.User;
+import com.crowdfunding.util.Page;
 
 import java.util.Map;
 
@@ -10,4 +11,5 @@ import java.util.Map;
 public interface UserService {
     //查询用户登录
     User queryUserLogin(Map map);
+    Page queryPage(Map<String,Object> paramMap);
 }

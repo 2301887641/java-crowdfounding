@@ -8,9 +8,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-	<link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
-	<link rel="stylesheet" href="/css/font-awesome.min.css">
-	<link rel="stylesheet" href="/css/carousel.css">
+	<link rel="stylesheet" href="${APP_PATH }/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="${APP_PATH }/css/font-awesome.min.css">
+	<link rel="stylesheet" href="${APP_PATH }/css/carousel.css">
 	<style>
     h3 {
         font-weight:bold;
@@ -108,7 +108,7 @@ h3.break>a {
 				</div>
             <div id="navbar" class="navbar-collapse collapse" style="float:right;">
               <ul class="nav navbar-nav navbar-right">
-                <li><a href="/login.htm">登录</a></li>
+                <li><a href="${APP_PATH }/login.htm">登录</a></li>
                 <li><a href="reg.html">注册</a></li>
               </ul>
             </div>
@@ -622,10 +622,10 @@ h3.break>a {
     </div><!-- /.container -->
 
 
-    <script src="/jquery/jquery-2.1.1.min.js"></script>
-    <script src="/bootstrap/js/bootstrap.min.js"></script>
-	<script src="/script/docs.min.js"></script>
-    <script src="/script/back-to-top.js"></script>
+    <script src="${APP_PATH }/jquery/jquery-2.1.1.min.js"></script>
+    <script src="${APP_PATH }/bootstrap/js/bootstrap.min.js"></script>
+	<script src="${APP_PATH }/script/docs.min.js"></script>
+    <script src="${APP_PATH }/script/back-to-top.js"></script>
     <script>
     $(".thumbnail img").css("cursor", "pointer");
     $(".thumbnail img").click(function(){
